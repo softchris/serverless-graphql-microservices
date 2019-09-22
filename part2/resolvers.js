@@ -3,6 +3,17 @@ let products = [{
   name: 'Avengers - End game'
 }]
 
+let reviews = [{
+  grade: 5,
+  title: 'Great movie',
+  description: 'Great actor playing Thanos',
+  product: 1
+}]
+
+function getReviews() {
+  return Promise.resolve(reviews);
+}
+
 function getProducts() {
   return Promise.resolve(products);
 }
@@ -23,6 +34,9 @@ module.exports = {
     hello: () => "world",
     products: async() => getProducts(),
     product: async(_, { id }) => getProduct(id)
+  },
+  Review: {
+    product: async(review) => getProduct(review.product)
   },
   Mutation: {
     createProduct: async(_, { product }) => createProduct(product)

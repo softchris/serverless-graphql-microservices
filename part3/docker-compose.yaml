@@ -1,0 +1,18 @@
+version: '3.3'
+services: 
+  product-service:
+    build:
+      context: ./products
+    ports:
+      - "8000:3000"
+    networks: 
+      - microservices
+  review-service:
+    build:
+      context: ./reviews
+    ports:
+      - "8001:3000"
+    networks:
+      - microservices
+networks: 
+  microservices:

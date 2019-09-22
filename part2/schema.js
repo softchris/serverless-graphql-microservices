@@ -6,6 +6,13 @@ const typeDefs = gql`
     name: String
   } 
 
+  type Review {
+    grade: Int,
+    title: String,
+    description: String,
+    product: Product
+  }
+
   type Mutation {
     createProduct(product: ProductInput): Product
   }
