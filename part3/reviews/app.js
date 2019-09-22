@@ -11,17 +11,17 @@ const reviews = [{
   },
   {
     id: 2,
-    name: "Captain America, the first avenger, so good",
+    title: "Captain America, the first avenger, so good",
     description: "WW2, good bad guy, what more do you want",
     grade: 5,
     product: 2
   },
   {
     id: 3,
-    name: "Captain Marvel. Mar vel, get it? :)",
+    title: "Captain Marvel. Mar vel, get it? :)",
     description: "She must be the most powerful Avenger or? Definitely the fastest",
     grade: 5,
-    product: 2
+    product: 3
   }
 ]
 

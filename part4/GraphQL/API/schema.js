@@ -1,6 +1,8 @@
-const { gql } = require("apollo-server");
+const {
+  gql
+} = require("apollo-server");
 
-const typeDefs = gql`
+const typeDefs = gql `
   type Product {
     id: ID,
     name: String
@@ -11,6 +13,10 @@ const typeDefs = gql`
     title: String,
     description: String,
     product: Product
+  }
+
+  input ProductInput {
+    name: String
   }
 
   type Mutation {
