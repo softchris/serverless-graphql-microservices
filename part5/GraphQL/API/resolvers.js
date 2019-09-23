@@ -1,13 +1,13 @@
 const fetch = require('node-fetch');
 
 async function getReviews() {
-  const res = await fetch('http://localhost:8001');
+  const res = await fetch(process.env.REVIEWS_URL);
   const json = await res.json();
   return json;
 }
 
 async function getProducts() {
-  const res = await fetch('http://localhost:8000');
+  const res = await fetch(process.env.PRODUCTS_URL);
   const json = await res.json();
   return json;
 }
