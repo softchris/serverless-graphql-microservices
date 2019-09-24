@@ -1,16 +1,28 @@
 {
-	"name": "serverless-graphql-workshop",
-	"version": "1.0.0",
-	"description": "A workshop by Azure Cloud Developer Advocates to teach Serverless and GraphQL using Azure",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"docs:build": "vuepress build"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "MIT",
-	"dependencies": {
-		"vuepress": "^1.0.1"
-	}
+  "name": "serverless-graphql-workshop",
+  "version": "1.0.0",
+  "description": "A workshop by Azure Cloud Developer Advocates to teach Serverless and GraphQL using Azure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:build": "vuepress build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.0.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softchris/serverless-graphql-microservices.git"
+  },
+  "bugs": {
+    "url": "https://github.com/softchris/serverless-graphql-microservices/issues"
+  },
+  "homepage": "https://github.com/softchris/serverless-graphql-microservices#readme"
 }
