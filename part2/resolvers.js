@@ -33,7 +33,8 @@ module.exports = {
   Query: {
     hello: () => "world",
     products: async() => getProducts(),
-    product: async(_, { id }) => getProduct(id)
+    product: async(_, { id }) => getProduct(id),
+    reviews: async () => getReviews(),
   },
   Review: {
     product: async(review) => getProduct(review.product)
