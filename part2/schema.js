@@ -13,6 +13,10 @@ const typeDefs = gql`
     product: Product
   }
 
+  input ProductInput {
+    name: String
+  }
+
   type Mutation {
     createProduct(product: ProductInput): Product
   }
