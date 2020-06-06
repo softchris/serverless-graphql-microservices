@@ -6,7 +6,7 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "apollo-server": "^2.7.0-alpha.3",
+    "apollo-server": "^2.14.2",
     "graphql": "^14.4.1",
     "node-fetch": "^2.6.0"
   },
